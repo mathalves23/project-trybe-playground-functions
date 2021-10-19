@@ -103,7 +103,7 @@ function decode(frase) {
   frase = frase.replace(/5/g, 'u');
   return frase;
 }
-//font https://www.w3schools.com/js/js_string_methods.asp
+// Source: https://www.w3schools.com/js/js_string_methods.asp
 
 module.exports = {
   calcArea,
