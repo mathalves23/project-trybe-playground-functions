@@ -25,7 +25,7 @@ function splitSentence(string) {
 function concatName(array) {
   let concatText = array[array.length - 1].concat(', ', array[0]);
   return concatText;
-} 
+}
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -51,8 +51,18 @@ function highestCount(numeros) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceCat1 = Math.abs(cat1 - mouse);
+  let distanceCat2 = Math.abs(cat2 - mouse);
+  let print;
+  if (distanceCat1 < distanceCat2) {
+    print = 'cat1';
+  } else if (distanceCat2 < distanceCat1) {
+    print = 'cat2';
+  } else {
+    print = 'os gatos trombam e o rato foge';
+  }
+  return print;
 }
 
 // Desafio 8
