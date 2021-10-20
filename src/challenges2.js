@@ -28,7 +28,7 @@ function triangleCheck(lineA, lineB, lineC) {
   let aMaisC = Math.abs(lineA + lineC);
   let bMenosC = Math.abs(lineB - lineC);
   let bMaisC = Math.abs(lineB + lineC);
-  if (aMenosB < lineC && lineC < (aMaisB) || aMenosC < lineB && lineB < (aMaisC) || bMenosC < lineA && lineA < (bMaisC)) {
+  if ((aMenosB < lineC) && (lineC < aMaisB) || (aMenosC < lineB) && (lineB < aMaisC) || (bMenosC < lineA) && (lineA < bMaisC)) {
     return true;
   }
   return false;
